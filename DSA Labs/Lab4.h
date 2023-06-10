@@ -3,67 +3,49 @@ File:			DSA_Lab4.h
 Author(s):
 	Base:		Justin Tackett
 				jtackett@fullsail.com
-	Student:
-
+	Student:	Anita Sailors
+				amsailors@student.fullsail.edu
 Purpose:		Usage of the std::list class
 Notes:			Property of Full Sail University 2305
 */
-
 // Header protection
 #pragma once
-
 /***********/
 /* Defines */
 /***********/
-
 /*
 How to use:
-
 	When working on a lab, turn that lab's #define from 0 to 1
-
 		Example:	#define LAB_1	1
-
 	When working on an individual unit test, turn that #define from 0 to 1
-
 		Example:	#define DYNARRAY_DEFAULT_CTOR	1
-
 NOTE: If the unit test is not on, that code will not be compiled!
 */
-
-
 // Main toggle
-#define LAB_4	0
-
+#define LAB_4	1
 // Individual unit test toggles
-#define LAB4_QUEUE_ADD			0
-#define LAB4_STACK_ADD			0
-#define LAB4_QUEUE_REMOVE		0
-#define LAB4_STACK_REMOVE		0
-#define LAB4_INSERT_ITER		0
-#define LAB4_INSERT_INDEX		0
-#define LAB4_REMOVE_DECIMAL		0
-
+#define LAB4_QUEUE_ADD			1
+#define LAB4_STACK_ADD			1
+#define LAB4_QUEUE_REMOVE		1
+#define LAB4_STACK_REMOVE		1
+#define LAB4_INSERT_ITER		1
+#define LAB4_INSERT_INDEX		1
+#define LAB4_REMOVE_DECIMAL		1
 /************/
 /* Includes */
 /************/
 #include <list>
-
 class DSA_Lab4 {
-
-	friend class UnitTests_Lab4;	// Giving access to test code
-
+	friend class UnitTests_Lab4; // Giving access to test code
 	// Data members
 	std::list<float> mList;
-
 public:
-
 	// Add all of the values from the array into the list using queue ordering
 	//
 	// In:	_arr			The array of values
 	//		_size			The number of elements in the array
 	void QueueOrderingAdd(const float* _arr, size_t _size) {
 		// TODO: Implement this method
-		
 	}
 
 	// Add all of the values from the array into the list using stack ordering
@@ -72,7 +54,6 @@ public:
 	//		_size			The number of elements in the array
 	void StackOrderingAdd(const float* _arr, size_t _size) {
 		// TODO: Implement this method
-		
 	}
 
 	// Remove a single value from the list using queue ordering
@@ -80,7 +61,6 @@ public:
 	// Return: The value that was removed
 	float QueueOrderingRemove() {
 		// TODO: Implement this method
-		
 	}
 
 	// Remove a single value from the list using stack ordering
@@ -88,7 +68,6 @@ public:
 	// Return: The value that was removed
 	float StackOrderingRemove() {
 		// TODO: Implement this method
-		
 	}
 
 	// Insert a value _index nodes away from the head node
@@ -107,7 +86,6 @@ public:
 	//		_val		The value to insert
 	void Insert(int _index, float _val) {
 		// TODO: Implement this method
-		
 	}
 
 	// Insert a value at the spot specified by the iterator passed in
@@ -116,7 +94,6 @@ public:
 	//		_val		The value to insert
 	void Insert(std::list<float>::iterator _iter, float _val) {
 		// TODO: Implement this method
-		
 	}
 
 	// Remove all values from mList that have a decimal value > _decimal
@@ -132,7 +109,5 @@ public:
 	// Return: The total number of values removed
 	int RemoveDecimalGreater(float _decimal) {
 		// TODO: Implement this method
-		
 	}
- 	
 };
