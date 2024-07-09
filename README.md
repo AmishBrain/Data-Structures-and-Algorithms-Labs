@@ -1,1 +1,1 @@
-This repository is a month worth of work in Data Structures and Algorithms from Full Sail University. 
+This repository is a class in Data Structures and Algorithms from Full Sail University. 
